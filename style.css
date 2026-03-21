@@ -38,8 +38,6 @@ body {
     background-color: var(--bg-color);
     color: var(--text-color);
     line-height: 1.6;
-    overflow-x: hidden;
-    position: relative;
 }
 
 /* Ambient Background Glows */
@@ -294,6 +292,30 @@ section {
     max-width: 900px;
 }
 
+.hero h1 {
+    font-size: clamp(2.5rem, 4vw + 1rem, 4.2rem);
+    line-height: 1.15;
+    margin-bottom: 1.2rem;
+    max-width: 900px;
+}
+
+.hero h2 {
+    font-size: clamp(1.5rem, 2.5vw, 2.2rem);
+    color: #cbd5e1;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    max-width: 800px;
+}
+
+.hero h3 {
+    font-size: clamp(1.1rem, 1.8vw, 1.25rem);
+    color: var(--text-muted);
+    font-weight: 300;
+    line-height: 1.7;
+    margin-bottom: 2.5rem;
+    max-width: 700px;
+}
+
 .hero p {
     font-size: clamp(1.125rem, 2vw, 1.35rem);
     margin: 2rem 0 3rem;
@@ -381,6 +403,9 @@ section {
     background: var(--card-bg);
     border: 1px solid var(--card-border);
     transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    height: auto;
 }
 
 .project-card:hover {
@@ -427,7 +452,10 @@ section {
 }
 
 .project-info {
-    padding: 0 1rem 1rem;
+    padding: 0 1rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .project-info h3 {
@@ -447,6 +475,7 @@ section {
     font-weight: 600;
     font-size: 0.95rem;
     color: var(--text-color);
+    margin-top: auto;
 }
 
 .read-more i {
